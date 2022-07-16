@@ -1,0 +1,18 @@
+<h1>Comentarios :)</h1>
+
+<div class="row">
+  <div class="col-md-6 mb-3" *ngFor="let comentario of comentarios | async">
+    <div class="card row align-items-center text-bg-primary mb-3"style="max-width: 30rem;">
+      <div class="card-body text-bg-light p-3">
+        <table class="table align-middle"> </table>
+        <div class="card-title text-bg-warning p-3">
+          <h5>{{ comentario.name }}</h5>
+        </div>
+        <div class="card-text">
+          {{ comentario.email }}
+          <h4>{{ comentario.body }}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
